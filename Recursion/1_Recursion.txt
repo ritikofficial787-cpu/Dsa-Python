@@ -1,0 +1,34 @@
+* Recursion :
+           A way of solving problem by having a function calling itself.
+ ex: Russian doll: A doll stack on topp so find until the last doll not found and of we open the doll we can get smaller and smaller doll.
+
+-Properties of Recursion:
+ -Performing the same operations multiple times with different inputs.
+ -In every step we try smaller inputs to make the problem smaller.
+ -Base condition is needed to stop the Recursion, otherwise infinite loop will occuur.
+
+-Russian doll in code:
+  def openRussianDoll(doll):
+    if doll ==1;
+    print("All dolls are opened")
+    else:
+       openRussianDoll(doll-1)
+
+
+*Why we nedd Recursion?
+ -Recursive thinking is really imporetant in programming and it heps you break down big problems
+  into samller ones and easier to use.
+
+*When do chhos recursion?
+ -If you can divide the problem into samller into sub problems
+ -Design N lgorithm to compute nth...
+ -Write code to list the n..
+ -Implement a method to compute all.
+ -Practice  
+
+*The prominent usage of recursion in data structure likes trees and graphs.
+
+*Interview
+
+*It is used in many algorithm (divide and conquer, greedy and dynamic programming)
+

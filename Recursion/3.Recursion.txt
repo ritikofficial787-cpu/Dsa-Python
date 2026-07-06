@@ -1,0 +1,14 @@
+# Wheb to use/Avoid Recursion?
+
+When to use it?
+ -When we can easily breakdown a problem into similar subproblem.
+ -When we are fine with extra overhad(both time and space) that comes with it.
+ -When we need a quick working solution instead of efficient one.
+ -It is very useful When traverse a tree.
+ -When we use memoiztion in recursion.
+
+When to avoid it?
+ -If time and space complexity matter for us.
+ -Recursion uses more memeory.If we used embeded memory.For example an application that takes more membory in the phone is not efficient.
+ Recursion can be slow.
+

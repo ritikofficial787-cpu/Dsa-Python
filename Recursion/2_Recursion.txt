@@ -1,0 +1,18 @@
+* How recursion works?
+1.A method calls itself
+2.Ecit from the infinite loop
+
+ex: def recursiveMethod(parameters):
+      if exit from condition satisfied:
+        retur some value
+      else:
+         recursionMethod(modified parameters)
+
+ex: def recursivenMethod(n):          
+if n<1:
+print("n is less than 1")
+else:
+recursiveMethod(n-1)
+print(n)
+
+if n = 4 then else is executed then recursiveMethod(3)---> recursiveMethod(2)---->recursiveMethod(1)---->recursiveMethod(0)----> n is less than 1 

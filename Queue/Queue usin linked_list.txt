@@ -1,0 +1,196 @@
+#Queue using Linked List
+
+#create an object of Linked List class ---:|head|null|  and |tail|null|
+#Then add elment  liked link list
+
+/**
+ * ============================================================
+ *  enQueue() Method — Add element to REAR of queue
+ * ============================================================
+ *
+ *  BEFORE enQueue(3):
+ *
+ *  [Head | 111] ──► [1 | 222] ──► [2 | null]
+ *                    (111)          (222)
+ *  [Tail | 222] ──────────────────────► ▲
+ *
+ *  STEP 1 — Create new node:
+ *           newNode = { data: 3, next: null }   (address: 333)
+ *
+ *  STEP 2 — Link old tail to new node:
+ *           tail.next = newNode
+ *           Node(2).next:  null  ──►  333
+ *
+ *  STEP 3 — Move tail to new node:
+ *           tail = newNode
+ *           Tail:  222  ──►  333
+ *
+ *  AFTER enQueue(3):
+ *
+ *  [Head | 111] ──► [1 | 222] ──► [2 | 333] ──► [3 | null]
+ *                    (111)          (222)           (333)
+ *                                                     ▲
+ *  [Tail | 333] ────────────────────────────────────────┘
+ *
+ *  STACK VIEW:
+ *           ┌───┐
+ *           │ 3 │  ◄── rear (last in)
+ *           ├───┤
+ *           │ 2 │
+ *           ├───┤
+ *           │ 1 │  ◄── front (first out)
+ *           └───┘
+ *
+ *  TIME : O(1)  |  SPACE : O(1)
+ *
+ * ============================================================
+ */
+
+
+/**
+ * ============================================================
+ *  deQueue() Method — Remove element from FRONT of queue
+ * ============================================================
+ *
+ *  BEFORE deQueue():
+ *
+ *  [Head | 111] ──► [1 | 222] ──► [2 | 333] ──► [3 | null]
+ *                    (111)          (222)           (333)
+ *  [Tail | 333] ────────────────────────────────────► ▲
+ *
+ *  STEP 1 — Save front node:
+ *           temp = head            →  temp points to Node(1)
+ *
+ *  STEP 2 — Move head forward:
+ *           head = head.next       →  head now points to Node(2)
+ *
+ *           [Head | 222] ──────────► [2 | 333] ──► [3 | null]
+ *                       ╳ Node(1) removed
+ *
+ *  STEP 3 — Disconnect removed node:
+ *           temp.next = null       →  Node(1).next = null
+ *           return temp.data       →  returns 1
+ *
+ *  AFTER deQueue():
+ *
+ *  [Head | 222] ──► [2 | 333] ──► [3 | null]
+ *                    (222)           (333)
+ *  [Tail | 333] ──────────────────────► ▲
+ *
+ *  STACK VIEW:
+ *           ┌───┐
+ *           │ 3 │  ◄── rear
+ *           ├───┤
+ *           │ 2 │  ◄── front  (1 was removed)
+ *           └───┘
+ *
+ *  TIME : O(1)  |  SPACE : O(1)
+ *
+ * ============================================================
+ */
+
+
+/**
+ * ============================================================
+ *  delete() Method — Remove a SPECIFIC node by value
+ * ============================================================
+ *
+ *  EXAMPLE: delete(2) from queue [1 → 2 → 3]
+ *
+ *  BEFORE:
+ *
+ *  [Head | 111] ──► [1 | 222] ──► [2 | 333] ──► [3 | null]
+ *                    (111)          (222)           (333)
+ *  [Tail | 333] ────────────────────────────────────► ▲
+ *
+ *  STEP 1 — Initialise pointers:
+ *           prev = null
+ *           curr = head            →  curr = Node(1)
+ *
+ *  STEP 2 — Traverse to find target:
+ *           curr.data == 2?  No    →  prev = Node(1), curr = Node(2)
+ *           curr.data == 2?  Yes   →  target found!
+ *
+ *  STEP 3 — Bypass the target node:
+ *           prev.next = curr.next  →  Node(1).next = Node(3)
+ *
+ *           [Head | 111] ──► [1 | 333] ─────────────► [3 | null]
+ *                                      ╲ Node(2) deleted
+ *
+ *  STEP 4 — Disconnect deleted node:
+ *           curr.next = null       →  Node(2).next = null
+ *
+ *  AFTER delete(2):
+ *
+ *  [Head | 111] ──► [1 | 333] ──► [3 | null]
+ *                    (111)           (333)
+ *  [Tail | 333] ──────────────────────► ▲
+ *
+ *  EDGE CASES:
+ *    • Delete head node  →  same as deQueue()
+ *    • Delete tail node  →  update tail to prev node
+ *    • Value not found   →  traverse ends, do nothing
+ *
+ *  TIME : O(n)  |  SPACE : O(1)
+ *
+ * ============================================================
+ */
+
+
+/**
+ * ============================================================
+ *  peek() Method — View FRONT element WITHOUT removing it
+ * ============================================================
+ *
+ *  QUEUE STATE:
+ *
+ *  [Head | 111] ──► [1 | 222] ──► [2 | 333] ──► [3 | null]
+ *                    (111)          (222)           (333)
+ *  [Tail | 333] ────────────────────────────────────► ▲
+ *
+ *  STEP 1 — Check if queue is empty:
+ *           head == null?  No  →  continue
+ *
+ *  STEP 2 — Read front value WITHOUT moving any pointer:
+ *           return head.data   →  returns 1
+ *
+ *           peek()
+ *             │
+ *             ▼
+ *  [Head | 111] ──► [1 | 222] ──► [2 | 333] ──► [3 | null]
+ *                    ^^^
+ *                  returns 1      (queue is UNCHANGED)
+ *
+ *  COMPARISON:
+ *
+ *  ┌──────────────┬──────────────────────────┬──────────┐
+ *  │  Operation   │  Effect on Queue         │ Returns  │
+ *  ├──────────────┼──────────────────────────┼──────────┤
+ *  │  peek()      │  No change               │ 1        │
+ *  │  deQueue()   │  Removes front node      │ 1        │
+ *  │  isEmpty()   │  No change               │ true/false│
+ *  └──────────────┴──────────────────────────┴──────────┘
+ *
+ *  TIME : O(1)  |  SPACE : O(1)
+ *
+ * ============================================================
+ */
+
+
+/**
+ * ============================================================
+ *  COMPLEXITY SUMMARY
+ * ============================================================
+ *
+ *  ┌───────────────┬────────────┬─────────────┐
+ *  │  Operation    │    Time    │    Space    │
+ *  ├───────────────┼────────────┼─────────────┤
+ *  │  enQueue()    │   O(1)     │   O(1)      │
+ *  │  deQueue()    │   O(1)     │   O(1)      │
+ *  │  delete()     │   O(n)     │   O(1)      │
+ *  │  peek()       │   O(1)     │   O(1)      │
+ *  │  isEmpty()    │   O(1)     │   O(1)      │
+ *  └───────────────┴────────────┴─────────────┘
+ *
+ * ============================================================
+ */

@@ -1,0 +1,21 @@
+#How To Write recursion in 3 steps?
+ -Factorial :-
+ . It is the product of all positive integers less than or equal to n.
+ . Denoted by n!  (Chirstian kamp 1808)
+ . Only positive numbers.
+ . O!=1
+
+ex: 4!=4*3*2*1=24 (here n=4 so numbers are less than 4 and numbers should be positive)
+ n!=n*(n-1)*(n-2)*...*2*1
+
+ -Step:-1 Recursive case - the flow.
+  n! = n*(n-1)*(n-2)*...*2*1   --------> n!=n*(n-1)!
+
+  -Step2: Base case-the stoping criterion
+  .1!=1
+  .0!=0
+  
+  -step3 : Unintentional case - the constraint
+  .Factorial(-1)=??
+  .Factorial(1.5)=??
+  

@@ -1,0 +1,8 @@
+*         Recursive   vs       Iterative Method
+
+    def powerOfTwo(n):            def powerOfTwo(n) : 
+      if n==0:                        i = 0
+      return 1                        power =1
+      else:                           while i<n:       power = powerOfTwo(n-1)
+       return power *2                  power = power *2
+                                      return power
