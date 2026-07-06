@@ -1,0 +1,30 @@
+* BIG o:- 
+         Big O is the Language and metric we use to desribe the efficiency of the algorithm.
+eg:
+   Internet (O(n)): The time it takes to send a file online grows bigger and bigger with the size of the file.
+   Airplane (O(1)): The flight takes the exact same amount of time, whether you are carrying a tiny file or a massive 1 TB hard drive.
+    Rule: For small files, the internet is faster; but for massive data, flying it physically wins because its delivery time never increases.
+
+* Big O  run time Notation:-
+. Best case
+. Average case
+. Worst Case
+
+* Big O, Big Theta AND Big Omega
+.Big O :- It is a complexity that is going to be less or equal to the Worst case. 
+.Big-omega :- It is a complexity that is going to br at least more than the best case.
+.Big-Theta :- It is a complexity that is within bounds of the worst and the best cases.
+ 
+ ex:- [5,4,10,...,8,11,68,12,....90,13,77,55,9]....n
+
+ 1. Big O — O(N) (Worst Case)
+  .What it means: This is the absolute maximum time the search could take.
+  .Scenario: The number you are looking for is at the very end of the list (the number 9), or it isn't in the list at all. You are forced to check every single item ($N$ items) from start to finish.
+
+  2. Big Omega  — Omega(1) (Best Case)
+  .What it means: This is the absolute fastest the search could possibly finish.
+  .The Scenario: You get incredibly lucky, and the very first number you check (the number 5) is exactly what you were looking for. It takes just 1 step, no matter how long the list is.
+
+3. Big Theta  — Theta(n/2) (Average Case)
+.What it means: This is the typical, real-world time the search takes on average.
+.The Scenario: In a random list, the number you want will usually be sitting somewhere around the middle. On average, you will end up checking about half of the total items ($n/2$) before finding it. (Note: In formal Big O math, we drop constants, so this is usually simplified to $\Theta(N)$).

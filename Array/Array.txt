@@ -1,0 +1,26 @@
+Arrays :-
+       Array is one of the type of data 
+          stucture that store smae type of data .
+
+ - | 4 | 3 | 1 | 6 | 8 | 1 0|   <-------"a"(not store)
+    [0] [1] [2] [3] [4] [5]
+ - Array can store data of specified type means you cannot store alphabet in  integer array.
+ - Elements of an array are located in a contiguous.
+ - Each elemnt of an array has a unique index.
+ - The size of an array is predeffined and cannot be modified.
+
+#What is an array?
+ -In computer science, an array is a data structure consisting of a collection of elments , 
+   each identified by at least one array index or key. An array is stored such that position of each
+   each element can be computed from its index by a mathematical formula.
+
+ex: | 4 | 3 | 1 | 6 | 8 | 10|
+
+
+#Why do we need an array?
+- If need to store three number:               -What if 500 intehers?
+   3 variables                                 -Are we going to use 500 variable?
+     num1                                      -ofcourse not, so we use Arrays
+     num2                                      -The answear is Array
+     num3
+.Its ok store 3 variables 

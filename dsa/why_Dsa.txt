@@ -1,0 +1,13 @@
+# Why Are Data Structure and Algorithm is Important?
+-Because how you organize your data completely changes how fast your computer can use it. If you organize it poorly, your apps run slow, freeze, or crash. 
+   If you organize it right, everything feels instant.
+ex: Data structures are important because they turn a chaotic pile of information into an organized system, 
+     allowing your software to find, add, or change data in milliseconds.
+
+-Without the right data structure, Google Maps would take hours to load a route, Instagram wouldn't be able to fetch your feed, 
+  and video games would lag to a standstill.
+
+
+#Why are Data Structures and Algorithms in Interviews?
+ -Problem Solving Skills
+ -Fundamental concepts of programming in limited time

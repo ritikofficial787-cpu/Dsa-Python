@@ -1,0 +1,28 @@
+# What are Dta Structure?
+- Data Structure are different ways of oraganizing data on your computer,
+  that can be used effectively.
+
+  eg: there is bunch of books in messy desk and it's hard to take a book, 
+  so if a book in organized way we can easily take-out a book we need.
+
+# What is an Algorithm?
+- It's a steps to accomplish a task.
+ eg: Preparing your Maggie. We need several step.
+-In computer science IS a set of rules for a computer program to accomplish a task.
+
+-Input ----->  Calculation---------> Stop when answear found
+
+-Sample algorithm that are use by application:
+ -How do Google and Facebook transmit live videos across the interner?
+  - There are using Compression Algorithm.
+  -How to find shoretest path on the map?
+    -Graph Algorithm(Djisktra Algorithm)
+    -How to arrange solar panels on the the International Space Station?
+      -OPtimization and scheduling algorithm.
+
+-What makes A good Algorithm?
+1.Correctness
+2.Efficiency
+
+
+

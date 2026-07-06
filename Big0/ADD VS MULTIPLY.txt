@@ -1,0 +1,11 @@
+ADD                             VS       Multiply
+for a in arrayA:                          for a in arrayA:
+ print(a)                                 for b in arrayB:
+                                              print(a,b)
+ for b in arrayB:
+  print(b)
+
+*Add the Runtime O(A+B)                           *Multiply the Runtimes: O(A*B)
+-If your algorithm is in the form                 If your algorithm iin the form "do this for each time you do that"
+"do this,then when you are all done, do that"      then you Multiply the Runtime 
+then you add the rintimeyour a

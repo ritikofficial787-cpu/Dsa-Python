@@ -1,0 +1,29 @@
+#Arrays in memory
+1. One Dimensional
+ |5|4|10|11|8|11|68|
+
+.In Ram(Memory), Our compiler allocate 7 contiguous space to arrays and it can allocate in at different place.
+.Elements are allocate to each other because its the nature of array.
+2. Two Dimensional array:-
+ 
+. |1|2|3|
+. |4|5|6|
+. |7|8|9|
+
+In memory Compiler it's is represented like 1-dimensional.\
+.Memory:
+           |1|2|3|4|5|6|7|8|9|
+
+3.Three Dimensional Array: depth row coloumn
+                          [[[0, 1, 2],
+                          [3, 4, 5]],
+
+                          [[6,  7,  8],
+                          [9. 10, 11]],
+
+                          [[12, 13, 14],
+                          [15, 16, 17]]] 
+In memory Compiler it's is represented like 1-dimensional.\
+.Memory:
+           |1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|
+

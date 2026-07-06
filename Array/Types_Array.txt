@@ -1,0 +1,34 @@
+# Types of Arrays:-
+ 
+  1. One Dimensional                       2. Multi-Dimensional
+                                               - Two dimesional
+                                               - Three dimesional
+                                               - Four Dimensional
+                                                   .
+                                                   .
+                                               - N dimesional
+
+# 1. One Dimensional Array(linear):-
+                                    An array  with a buch of values having been declared with a single index.                                 a[i] ----> i between o and N
+                                     | 5 | 4 | 10 | 11 | 8 | 11 | 68 | 87 | 12|
+                                     [0]  [1]  [2]  [3] [4]  [5]  [6]  [7]  [8]
+  . To access no 10 then array_name[index]-a[2]
+
+# 2. Multi Dimensional Array:-
+
+.Two Dimensional Array = An array with a bunch of values having been declared with double index
+. a[i][j] --> i and j betw 0 and N
+   0  1  2  3  4 5  6  7  8
+. 0|1|33|55|91|20|51|62|74|13|
+. 1|5|4|10|11|8| 11 |68|87| 12|
+. 2|24|50|37|40|48|30|59|81|93|
+
+  . to access elemnt in two dimensonal array :array_name[index of row][index of cloumn]
+    ex: 20 then a[0][4] or 5 then a[1][0] or 93 then a[2][8]
+
+
+ .Three dimensonal array :- An array with a bunch of value  having been declared with triple index.
+ .a[i][j][k] --> i,j and k between 0 and n
+ .This is rarely used(ex: cube)
+ .To access a number  three dimensional array-> a[0][0]1  
+

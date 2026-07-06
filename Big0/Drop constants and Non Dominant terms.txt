@@ -1,0 +1,16 @@
+Drop constant ----->
+o(2N)--->O(N)
+
+Drop Non Dominant terms
+o(N^2+N)-----> o(N^2)
+o(N+logN)------>O(N)
+
+#Why do we drop constants and non Dominant terms?
+ -It is very possible O(N) CODE is faster than O(1) code for specific inputs
+ -Diffrent computers with different architectures have different constant factors 
+ -Diffrent algorithms with the same basic idea and computational complexity might have slightly 
+  different constants.
+
+ex:- a*(b-c)  vs a*b-a*c
+-Big O asymptotic behavior dekhta hai — jab problem bahut bada ho jaaye (N → ∞).
+ Us stage pe constants aur chhote terms matter nahi karte.

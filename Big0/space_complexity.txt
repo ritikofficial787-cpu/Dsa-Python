@@ -1,0 +1,12 @@
+# Space complexity:-
+                   
+.Definition: Space complexity is a metric that describes the total amount of memory space an algorithm requires to execute and complete, relative to the size of the input data.
+
+In Simple Words: It measures the maximum extra RAM or storage space your code allocates while it is running. It is about memory.
+
+ex:-
+   to create a array size of n it take o(n) space required.
+   to create a 2-d array size of n it take o(n^2) space 
+**Remember if code called recursion then space complexity is o(N)
+           else no recursion it take O(1)
+

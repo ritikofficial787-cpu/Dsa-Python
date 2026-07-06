@@ -1,0 +1,34 @@
+# Types of Algorithms
+ - Simple recursive Algorithms
+ - Divide and Conquer algorithms
+ - Dynamic programming algorithms
+ - Greedy algorithms 
+ - Brute force algorithms
+ - Randomized algorithms
+
+1. Simple Recursive Algorithms
+In Simple Language: 
+                 A function that solves a problem by calling a smaller version of itself over and over until it reaches a clear stopping point.
+Real-Life Example: You open your College folder, inside it you open Semester 4, inside that you open Operating Systems, and you keep opening folders until you finally hit your Notes.txt file.
+
+2. Divide and Conquer Algorithms
+In Simple Language: You break a massive, overwhelming problem down into smaller, manageable pieces, solve those pieces individually, and then combine the results.
+
+3. Dynamic Programming Algorithms
+In Simple Language: Similar to divide and conquer, but it specifically remembers past results so it never wastes time calculating the exact same thing twice.
+
+
+4. Greedy Algorithms
+In Simple Language: It makes the absolute best, most optimal choice at this exact moment without worrying about or planning for the future consequences.
+Real-Life Example: If you are told to pick 3 items from a grocery store for free, you immediately grab the 3 most expensive items on the shelf closest to you.
+
+5.Brute force Algorithm
+In Simple Language: The most basic, straightforward approach that tries every single possible option one by one until it finally finds the correct answer.
+Real-Life Example: If you forget a 4-digit suitcase combination, you manually try 0001, 0002, 0003, and so on, until the latch finally clicks open.
+
+6. Randomized Algorithms
+In Simple Language: An algorithm that uses a bit of randomness or chance during its process to make decisions and find a solution faster.
+
+Real-Life Example: Flipping a coin to decide who gets the last slice of pizza instead of spending an hour arguing over who deserves it more.
+
+

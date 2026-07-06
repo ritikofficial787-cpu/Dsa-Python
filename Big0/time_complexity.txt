@@ -1,0 +1,35 @@
+# Algorithm run time complexities
+
+complexity       Name                Sample
+o(1)             constant             Accessing a specific element in array
+O(N)             Linear               Loop through array elements
+O(Log N)         Logarithmic          Find an element in sorted array
+O(N^2)           Quadratic            Looking array a every index in the array twice
+O(2^N)           Exponential          Double recursion in Fibonacci
+
+1. O(1) — Constant 
+.The Action: Looking at the total number written on the very first page of the bundle to see the class average.
+
+2.o(log N) — Logarithmic Time
+.The Action: Your guests are arriving, and they line up outside your door alphabetically by name. 
+             You need to find your friend "John." You open the front door, look at the person exactly in the middle of the line, and ask them their name. 
+            If their name starts with "M", you know John is in the front half of the line, so you completely ignore the back half. 
+            You repeat this by splitting the remaining group in half.
+
+3.O(N) — Linear Time
+.The Action: Serving individual plates of food to each guest.
+
+
+4.O(N^2) — Quadratic Time
+.The Action: Before eating, every single guest wants to clink glasses and say "Cheers!" with every other guest at the party exactly once.
+
+5.O(2^N) — Exponential TimeThe Action: Trying to figure out the seating arrangement when some guests secretly dislike each other. You have to write down every single possible combination of who can sit next to whom to find the perfect setup.
+
+To Remember It Easily:
+O(1): One task for the whole group.
+O(log N): Dividing the group in half until you are done.
+O(N): Doing a task for each person.
+O(N^2): Everyone interacting with everyone else.
+O(2^N): Testing every single combination of the group.
+
+ oredr= (O(1) < O(log n) < O(n) < O(n log n) < O(n^2) < O(2^n) < O(n!))
